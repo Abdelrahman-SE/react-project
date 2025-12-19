@@ -1,7 +1,11 @@
 import { LuCheckCheck, LuNotebookTabs, LuTrash2 } from "react-icons/lu";
 import { NavLink } from "react-router";
 
-export default function SidebarTodosSection({ allTodos, moveTodosToTrash }) {
+export default function SidebarTodosSection({
+  allTodos,
+  moveTodosToTrash,
+  setSidebarExpanded,
+}) {
   const completedTodos = allTodos.filter((todo) => todo.completed);
   const notcompletedTodos = allTodos.filter((todo) => !todo.completed);
   return (
@@ -9,6 +13,9 @@ export default function SidebarTodosSection({ allTodos, moveTodosToTrash }) {
       <li>
         <NavLink
           end
+          onClick={() => {
+            setSidebarExpanded(false);
+          }}
           to={"/todos"}
           className={({ isActive }) => {
             return isActive
@@ -29,6 +36,9 @@ export default function SidebarTodosSection({ allTodos, moveTodosToTrash }) {
       </li>
       <li>
         <NavLink
+          onClick={() => {
+            setSidebarExpanded(false);
+          }}
           to={"todos/completedTodos"}
           className={({ isActive }) => {
             return isActive
@@ -49,6 +59,9 @@ export default function SidebarTodosSection({ allTodos, moveTodosToTrash }) {
       </li>
       <li>
         <NavLink
+          onClick={() => {
+            setSidebarExpanded(false);
+          }}
           to={"todos/deletedTodos"}
           className={({ isActive }) => {
             return isActive

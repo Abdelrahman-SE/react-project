@@ -5,12 +5,15 @@ export default function SidebarNotesSection({
   allNotes,
   allFavoriteNotesID,
   moveNotesToTrash,
+  setSidebarExpanded,
 }) {
-
   return (
     <ul className="text-md space-y-2">
       <li>
         <NavLink
+          onClick={() => {
+            setSidebarExpanded(false);
+          }}
           to={"/"}
           className={({ isActive }) => {
             return isActive
@@ -31,6 +34,9 @@ export default function SidebarNotesSection({
       </li>
       <li>
         <NavLink
+          onClick={() => {
+            setSidebarExpanded(false);
+          }}
           to={"favoriteNotes"}
           className={({ isActive }) => {
             return isActive
@@ -51,6 +57,9 @@ export default function SidebarNotesSection({
       </li>
       <li>
         <NavLink
+          onClick={() => {
+            setSidebarExpanded(false);
+          }}
           to={"deletedNotes"}
           className={({ isActive }) => {
             return isActive

@@ -17,7 +17,6 @@ export default function Sidebar({
   moveTodosToTrash,
 }) {
   const [sideCategory, setSideCategory] = useState("");
-
   const [uiCategory, setUiCategory] = useState({
     form: false,
     dropdown: true,
@@ -55,6 +54,7 @@ export default function Sidebar({
         </p>
 
         <SidebarNotesSection
+          setSidebarExpanded={setSidebarExpanded}
           moveNotesToTrash={moveNotesToTrash}
           allFavoriteNotesID={allFavoriteNotesID}
           allNotes={allNotes}
@@ -75,6 +75,7 @@ export default function Sidebar({
         <p className="capitalize text-md text-[#0F173D]">todos</p>
 
         <SidebarTodosSection
+          setSidebarExpanded={setSidebarExpanded}
           allTodos={allTodos}
           moveTodosToTrash={moveTodosToTrash}
         />
