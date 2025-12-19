@@ -6,7 +6,7 @@ A full-stack web application built with modern frontend technologies and Supabas
 
 ## 🌐 Live Demo
 
-👉 Will be available after deployment on Vercel.
+👉 https://react-project-drab-beta.vercel.app/
 
 ---
 
