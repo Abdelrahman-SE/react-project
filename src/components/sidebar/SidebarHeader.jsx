@@ -32,7 +32,7 @@ export default function SidebarHeader({ setSidebarExpanded }) {
 
         <button
           onClick={() => setSidebarExpanded((prev) => !prev)}
-          className="hidden absolute -right-10 py-1 px-3 text-4xl rounded-2xl max-[768px]:flex justify-center items-center font-bold capitalize cursor-pointer hover:bg-[#0284c5d7]  bg-[#0284C5] text-white"
+          className="hidden absolute -right-15 py-1 px-3 text-4xl rounded-2xl max-[768px]:flex justify-center items-center font-bold capitalize cursor-pointer hover:bg-[#0284c5d7]  bg-[#0284C5] text-white"
         >
           <LuPanelRight className="m-1" />
         </button>

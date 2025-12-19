@@ -20,7 +20,7 @@ export default function Layout() {
   // NOTES FUNCTIONS
   const [openModal, setOpenModal] = useState(false);
   const [openEditModal, setOpenEditModal] = useState(false);
-  const [sidebarExpanded, setSidebarExpanded] = useState(true);
+  const [sidebarExpanded, setSidebarExpanded] = useState(false);
   const [selectedNote, setSelectedNote] = useState(null);
 
   const [searchQuery, setSearchQuery] = useState("");
@@ -223,7 +223,7 @@ export default function Layout() {
           allTodos={allTodos}
           moveTodosToTrash={moveTodosToTrash}
         />
-        <main className="bg-[#F1F5F9]">
+        <main className="bg-[#F1F5F9] min-h-screen">
           <Input
             setOpenTodoModal={setOpenTodoModal}
             preservedWord={preservedWord}
