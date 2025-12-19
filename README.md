@@ -12,8 +12,7 @@ A full-stack web application built with modern frontend technologies and Supabas
 
 ## 🛠️ Tech Stack
 
-- Frontend: React
-- Styling: Tailwind
+- Frontend: React, react-router, react-icons, Tailwind
 - Backend & Database: Supabase
 - Deployment: Vercel
 
